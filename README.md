@@ -1,6 +1,9 @@
 # UV_K5_playground
 [Latest RELEASES Download](https://github.com/piotr022/UV_K5_playground/releases/latest)
 
+# UV-K6 + UV-5R Plus Mods
+[Latest _Releases Download](https://github.com/spm81/Quansheng_UV-K5/tree/main/Firmware)
+
 ## src/messenger ![auto release build](https://github.com/piotr022/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg)
 ![messenger](./docs/messenger.gif)  
 AFSK messenger with T9 typing support  
