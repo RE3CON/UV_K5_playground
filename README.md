@@ -1,5 +1,6 @@
 # UV_K5_playground
-To support ongoing work, you can make a [donation](https://paypal.me/sq9p).  
+[Latest RELEASES Download](https://github.com/piotr022/UV_K5_playground/releases/latest)
+
 ## src/messenger ![auto release build](https://github.com/piotr022/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg)
 ![messenger](./docs/messenger.gif)  
 AFSK messenger with T9 typing support  
