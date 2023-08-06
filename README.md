@@ -130,7 +130,23 @@ Enter the 'Run & Debug' tab, select 'kwaczek DBG', and press run.
 You should have now a full development environment
 ![Environment](https://github.com/RE3CON/UV_K5-Tools/blob/main/media/DevEnv.png)
 
+## WIP Work in progress Mods
+Submenu AM TX on push side button 2 (flash light)
+amplituden modulation with remaining bug
+PTT sendet kein Träger Signal für Amplituden Modulation. Eher wie SSB Modulations bedingter Träger zumindest beim Rogerbeep. Mic Audio Input?
 
+**RSSI_SBAR_HOT instructions:**
+To go into the submenu push side button 2 (flashlight)
+**Settings Options:**
+Heater: on/off
+AM RX: 0/1/2
+S-metr: normal/59
+![20230806_213723](https://github.com/RE3CON/UV_K5_playground/assets/35396009/34b5f9fe-3cd9-40f1-8675-e296cb54e38d)
+
+**Full Changelog**: https://github.com/piotr022/UV_K5_playground/releases
+
+[Latest Releases](https://github.com/piotr022/UV_K5_playground/releases)
+[Mods for UV-K6 UV-5R Plus](https://github.com/spm81/Quansheng_UV-K5/tree/main/Firmware)
 ## links
 * currently firmare that is wrapped by par_runner comes from Tunas1337 mod 
 k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tunas1337/UV-K5-Modded-Firmwares)  
