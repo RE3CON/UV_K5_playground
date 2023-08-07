@@ -132,13 +132,13 @@ You should have now a full development environment
 
 ## WIP Work in progress Mods
 **AM_TX**
-* Submenu AM TX on push side button 2 (flash light)
+* Submenu AM TX, push side button 2 (flashlight)
 * amplituden modulation with remaining bug
 * PTT sendet kein Träger Signal für Amplituden Modulation. Eher wie SSB Modulations bedingter Träger zumindest beim Rogerbeep. Mic Audio Input?
 
-**RSSI_SBAR_HOT instructions:**
-* To go into the submenu push side button 2 (flashlight)
-**Settings Options:**
+**RSSI_SBAR_HOT**
+* To go into the submenu, push side button 2 (flashlight)
+***Settings Options:**
 * Heater: on/off
 * AM RX: 0/1/2
 * S-metr: normal/59
