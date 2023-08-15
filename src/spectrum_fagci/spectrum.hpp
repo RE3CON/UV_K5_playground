@@ -1,206 +1,212 @@
 #pragma once
+#include "keys.hpp"
 #include "radio.hpp"
 #include "system.hpp"
+#include "types.hpp"
 #include "uv_k5_display.hpp"
 
-typedef unsigned char u8;
-typedef signed short i16;
-typedef unsigned short u16;
-typedef signed int i32;
-typedef unsigned int u32;
-typedef signed long long i64;
-typedef unsigned long long u64;
-
-template <Radio::CBK4819 &RadioDriver>
-class CSpectrum {
+template <Radio::CBK4819 &RadioDriver> class CSpectrum {
 public:
-  static constexpr auto ExitKey = 13;
   static constexpr auto DrawingEndY = 42;
   static constexpr auto BarPos = 5 * 128;
 
-  u8 rssiHistory[64] = {};
-  u8 measurementsCount = 32;
+  static constexpr auto ModesCount = 7;
+  static constexpr auto LastLowBWModeIndex = 3;
+
+  static constexpr u32 modeHalfSpectrumBW[ModesCount] = {
+      16_KHz, 50_KHz, 100_KHz, 200_KHz, 400_KHz, 800_KHz, 1600_KHz};
+  static constexpr u16 modeScanStep[ModesCount] = {
+      1_KHz, 3125_Hz, 6250_Hz, 12500_Hz, 25_KHz, 25_KHz, 25_KHz};
+  static constexpr u8 modeXdiv[ModesCount] = {2, 2, 2, 2, 2, 1, 0};
+
+  u8 rssiHistory[128] = {};
+  u32 fMeasure;
+
+  u8 peakT = 0;
+  u8 peakRssi = 0;
+  u8 peakI = 0;
+  u32 peakF = 0;
   u8 rssiMin = 255;
-  u8 highestPeakX = 0;
-  u8 highestPeakT = 0;
-  u8 highestPeakRssi = 0;
-  u32 highestPeakF = 0;
-  u32 FStart, fMeasure;
+  u8 btnCounter = 0;
 
   CSpectrum()
-      : DisplayBuff(gDisplayBuffer), FontSmallNr(gSmallDigs),
-        Display(DisplayBuff), scanDelay(800), sampleZoom(2), scanStep(25_KHz),
-        frequencyChangeStep(100_KHz), rssiTriggerLevel(65), stickyPeakTrigger(false) {
+      : DisplayBuff(gDisplayBuffer), Display(DisplayBuff),
+        FontSmallNr(gSmallDigs), scanDelay(800), mode(5), rssiTriggerLevel(50) {
     Display.SetFont(&FontSmallNr);
+    frequencyChangeStep = modeHalfSpectrumBW[mode];
   };
 
-  inline bool ListenPeak() {
-    if (highestPeakRssi < rssiTriggerLevel) {
-      return false;
-    }
-
-    if (fMeasure != highestPeakF) {
-      fMeasure = highestPeakF;
-      RadioDriver.SetFrequency(fMeasure);
-      BK4819Write(0x47, u16OldAfSettings);
-      RadioDriver.ToggleAFDAC(true);
-    }
-
-    Listen(1000000);
-
-    highestPeakRssi = GetRssi();
-    rssiHistory[highestPeakX >> sampleZoom] = highestPeakRssi;
-
-    return true;
-  }
-
-  inline void Scan() {
+  void Scan() {
     u8 rssi = 0, rssiMax = 0;
     u8 iPeak = 0;
     u32 fPeak = currentFreq;
 
-    rssiMin = 255;
-    fMeasure = FStart;
+    fMeasure = GetFStart();
 
-    RadioDriver.ToggleAFDAC(false);
-    BK4819Write(0x47, 0);
+    // RadioDriver.ToggleAFDAC(false);
+    MuteAF();
 
-    for (u8 i = 0; i < measurementsCount; ++i, fMeasure += scanStep) {
-      rssi = rssiHistory[i] = GetRssi(fMeasure);
-      if (rssi < rssiMin) {
-        rssiMin = rssi;
+    u16 scanStep = GetScanStep();
+    u8 measurementsCount = GetMeasurementsCount();
+
+    for (u8 i = 0;
+         i < measurementsCount && (PollKeyboard() == 255 || resetBlacklist);
+         ++i, fMeasure += scanStep) {
+      if (!resetBlacklist && rssiHistory[i] == 255) {
+        continue;
       }
+      RadioDriver.SetFrequency(fMeasure);
+      rssi = rssiHistory[i] = GetRssi();
       if (rssi > rssiMax) {
         rssiMax = rssi;
         fPeak = fMeasure;
         iPeak = i;
       }
+      if (rssi < rssiMin) {
+        rssiMin = rssi;
+      }
     }
+    resetBlacklist = false;
+    ++peakT;
 
-    ++highestPeakT;
-    if (rssiMax > highestPeakRssi || highestPeakT >= (8 << sampleZoom)) {
-      highestPeakT = 0;
-      highestPeakRssi = rssiMax;
-      highestPeakX = iPeak << sampleZoom;
-      highestPeakF = fPeak;
+    if (rssiMax > peakRssi || peakT >= 16) {
+      peakT = 0;
+      peakRssi = rssiMax;
+      peakF = fPeak;
+      peakI = iPeak;
     }
   }
 
-  inline void DrawSpectrum() {
+  void DrawSpectrum() {
     for (u8 x = 0; x < 128; ++x) {
-      Display.DrawHLine(Rssi2Y(rssiHistory[x >> sampleZoom]), DrawingEndY, x);
+      auto v = rssiHistory[x >> modeXdiv[mode]];
+      if (v != 255) {
+        Display.DrawHLine(Rssi2Y(v), DrawingEndY, x);
+      }
     }
   }
 
-  inline void DrawNums() {
+  void DrawNums() {
     Display.SetCoursorXY(0, 0);
-    Display.PrintFixedDigitsNumber2(scanDelay, 0);
+    Display.PrintFixedDigitsNumber3(scanDelay, 2, 2, 1);
 
-    Display.SetCoursorXY(51, 0);
-    Display.PrintFixedDigitsNumber2(scanStep << (7 - sampleZoom));
+    Display.SetCoursorXY(105, 0);
+    Display.PrintFixedDigitsNumber3(GetBW(), 3, 3, 2);
 
-    Display.SetCoursorXY(58, 8);
-    Display.PrintFixedDigitsNumber2(scanStep);
+    Display.SetCoursorXY(42, 0);
+    Display.PrintFixedDigitsNumber3(peakF, 2, 6, 3);
 
-    Display.SetCoursorXY(107, 8);
-    Display.PrintFixedDigitsNumber2(highestPeakRssi, 0);
+    Display.SetCoursorXY(0, 48);
+    Display.PrintFixedDigitsNumber3(GetFStart(), 4, 4, 1);
 
-    Display.SetCoursorXY(86, 0);
-    Display.PrintFixedDigitsNumber2(highestPeakF);
+    Display.SetCoursorXY(98, 48);
+    Display.PrintFixedDigitsNumber3(GetFEnd(), 4, 4, 1);
 
-    Display.SetCoursorXY(44, 48);
-    Display.PrintFixedDigitsNumber2(currentFreq);
-
-    Display.SetCoursorXY(100, 48);
-    Display.PrintFixedDigitsNumber2(frequencyChangeStep);
-
-    Display.SetCoursorXY(0, 8);
-    Display.PrintFixedDigitsNumber2(rssiTriggerLevel, 0);
+    Display.SetCoursorXY(52, 48);
+    Display.PrintFixedDigitsNumber3(frequencyChangeStep, 3, 3, 2);
   }
 
-  inline void DrawRssiTriggerLevel() {
-    for (u8 x = 0; x < 128; x += stickyPeakTrigger ? 2 : 4) {
-      Display.DrawLine(x, x + 2, Rssi2Y(rssiTriggerLevel));
+  void DrawRssiTriggerLevel() {
+    u8 y = Rssi2Y(rssiTriggerLevel);
+    for (u8 x = 0; x < 126; x += 4) {
+      Display.DrawLine(x, x + 2, y);
     }
   }
 
-  inline void DrawTicks() {
-    u32 f = modulo(FStart, 1_MHz);
-    u32 step = scanStep >> sampleZoom;
-    for (u8 i = 0; i < 128; ++i, f += step) {
-      u8 barValue = 0b00001000;
-      modulo(f, 100_KHz) < step && (barValue |= 0b00010000);
-      modulo(f, 500_KHz) < step && (barValue |= 0b00100000);
-      modulo(f, 1_MHz) < step && (barValue |= 0b11000000);
-
-      gDisplayBuffer[BarPos + i] |= barValue;
-    }
-
+  void DrawTicks() {
     // center
-    gDisplayBuffer[BarPos + 64] |= 0b10101010;
+    gDisplayBuffer[BarPos + 64] = 0b00111000;
   }
 
-  inline void DrawArrow(u8 x) {
-    u8 *peakPos = gDisplayBuffer + BarPos + x;
-    x > 1 && (*(peakPos - 2) |= 0b01000000);
-    x > 0 && (*(peakPos - 1) |= 0b01100000);
-    (*(peakPos) |= 0b01110000);
-    x < 127 && (*(peakPos + 1) |= 0b01100000);
-    x < 128 && (*(peakPos + 2) |= 0b01000000);
+  void DrawArrow(u8 x) {
+    for (signed i = -2; i <= 2; ++i) {
+      signed v = x + i;
+      if (!(v & 128)) {
+        gDisplayBuffer[BarPos + v] |= (0b01111000 << abs(i)) & 0b01111000;
+      }
+    }
   }
 
-  void HandleUserInput() {
-    switch (lastButtonPressed) {
-    case 1:
-      UpdateScanDelay(200);
+  void OnKeyDown(u8 key) {
+    switch (key) {
+    case Keys::NUM1:
+      if (scanDelay < 8000) {
+        scanDelay += 100;
+        rssiMin = 255;
+      }
       break;
-    case 7:
-      UpdateScanDelay(-200);
+    case Keys::NUM7:
+      if (scanDelay > 400) {
+        scanDelay -= 100;
+        rssiMin = 255;
+      }
       break;
-    case 2:
-      UpdateSampleZoom(1);
+    case Keys::NUM3:
+      UpdateBWMul(1);
+      resetBlacklist = true;
       break;
-    case 8:
-      UpdateSampleZoom(-1);
+    case Keys::NUM9:
+      UpdateBWMul(-1);
+      resetBlacklist = true;
       break;
-    case 3:
-      UpdateRssiTriggerLevel(5);
-      break;
-    case 9:
-      UpdateRssiTriggerLevel(-5);
-      break;
-    case 4:
-      UpdateScanStep(-1);
-      UpdateSampleZoom(1);
-      break;
-    case 6:
-      UpdateScanStep(1);
-      UpdateSampleZoom(-1);
-      break;
-    case 11: // up
-      UpdateCurrentFreq(frequencyChangeStep);
-      break;
-    case 12: // down
-      UpdateCurrentFreq(-frequencyChangeStep);
-      break;
-    case 14:
+    case Keys::NUM2:
       UpdateFreqChangeStep(100_KHz);
       break;
-    case 15:
+    case Keys::NUM8:
       UpdateFreqChangeStep(-100_KHz);
       break;
-    case 5:
+    case Keys::UP:
+      UpdateCurrentFreq(frequencyChangeStep);
+      resetBlacklist = true;
+      break;
+    case Keys::DOWN:
+      UpdateCurrentFreq(-frequencyChangeStep);
+      resetBlacklist = true;
+      break;
+    case Keys::NUM5:
       ToggleBacklight();
-    case 0:
-      stickyPeakTrigger = !stickyPeakTrigger;
-      OnUserInput();
+      break;
+    case Keys::NUM0:
+      Blacklist();
+      break;
+    case Keys::ASTERISK:
+      UpdateRssiTriggerLevel(1);
+      DelayMs(90);
+      break;
+    case Keys::FUNCTION:
+      UpdateRssiTriggerLevel(-1);
+      DelayMs(90);
+      break;
     }
+    ResetPeak();
+  }
+
+  bool HandleUserInput() {
+    btnPrev = btn;
+    btn = PollKeyboard();
+    if (btn == Keys::EXIT) {
+      DeInit();
+      return false;
+    }
+
+    if (btn != 255) {
+      if (btn == btnPrev && btnCounter < 255) {
+        btnCounter++;
+      }
+      if (btnPrev == 255 || btnCounter > 16) {
+        OnKeyDown(btn);
+      }
+      return true;
+    }
+
+    btnCounter = 0;
+    return true;
   }
 
   void Render() {
     DisplayBuff.ClearAll();
     DrawTicks();
-    DrawArrow(highestPeakX);
+    DrawArrow(peakI << modeXdiv[mode]);
     DrawSpectrum();
     DrawRssiTriggerLevel();
     DrawNums();
@@ -208,167 +214,154 @@ public:
   }
 
   void Update() {
-    if (bDisplayCleared) {
-      currentFreq = RadioDriver.GetFrequency();
-      OnUserInput();
-      u16OldAfSettings = BK4819Read(0x47);
-      BK4819Write(0x47, 0); // mute AF during scan
+    if (peakRssi >= rssiTriggerLevel) {
+      ToggleGreen(true);
+      GPIOC->DATA |= GPIO_PIN_4;
+      Listen();
     }
-    bDisplayCleared = false;
-
-    HandleUserInput();
-
-    if (!ListenPeak())
+    if (peakRssi < rssiTriggerLevel) {
+      ToggleGreen(false);
+      GPIOC->DATA &= ~GPIO_PIN_4;
       Scan();
+    }
   }
 
-  void UpdateRssiTriggerLevel(i32 diff) {
-    rssiTriggerLevel = clamp(rssiTriggerLevel + diff, 10, 255);
-    OnUserInput();
-  }
+  void UpdateRssiTriggerLevel(i32 diff) { rssiTriggerLevel += diff; }
 
-  void UpdateScanDelay(i32 diff) {
-    scanDelay = clamp(scanDelay + diff, 800, 3200);
-    OnUserInput();
-  }
-
-  void UpdateSampleZoom(i32 diff) {
-    sampleZoom = clamp(sampleZoom - diff, 1, 5);
-    measurementsCount = 1 << (7 - sampleZoom);
-    OnUserInput();
+  void UpdateBWMul(i32 diff) {
+    if ((diff > 0 && mode < (ModesCount - 1)) || (diff < 0 && mode > 0)) {
+      mode += diff;
+      SetBW();
+      rssiMin = 255;
+      frequencyChangeStep = modeHalfSpectrumBW[mode];
+    }
   }
 
   void UpdateCurrentFreq(i64 diff) {
-    currentFreq = clamp(currentFreq + diff, 18_MHz, 1300_MHz);
-    OnUserInput();
-  }
-
-  void UpdateScanStep(i32 diff) {
-    if (diff > 0 && scanStep < 25_KHz) {
-      scanStep <<= 1;
+    if ((diff > 0 && currentFreq < 1300_MHz) ||
+        (diff < 0 && currentFreq > 18_MHz)) {
+      currentFreq += diff;
     }
-    if (diff < 0 && scanStep > 6250_Hz) {
-      scanStep >>= 1;
-    }
-    OnUserInput();
   }
 
   void UpdateFreqChangeStep(i64 diff) {
     frequencyChangeStep = clamp(frequencyChangeStep + diff, 100_KHz, 2_MHz);
-    OnUserInput();
   }
 
-  inline void OnUserInput() {
-    u32 halfOfScanRange = scanStep << (6 - sampleZoom);
-    FStart = currentFreq - halfOfScanRange;
-
-    // reset peak
-    highestPeakT = 0;
-    highestPeakRssi = 0;
-    highestPeakX = 64;
-    highestPeakF = currentFreq;
-
-    DelayUs(90000);
-  }
+  void Blacklist() { rssiHistory[peakI] = 255; }
 
   void Handle() {
     if (RadioDriver.IsLockedByOrgFw()) {
       return;
     }
 
-    if (!working) {
-      if (IsFlashLightOn()) {
-        working = true;
-        TurnOffFlashLight();
-      }
-      return;
+    if (!isInitialized && IsFlashLightOn()) {
+      TurnOffFlashLight();
+      Init();
     }
 
-    lastButtonPressed = PollKeyboard();
-    if (lastButtonPressed == ExitKey) {
-      working = false;
-      RestoreParams();
-      return;
+    if (isInitialized && HandleUserInput()) {
+      Update();
+      Render();
     }
-    Update();
-    Render();
   }
 
 private:
-  void RestoreParams() {
-    if (!bDisplayCleared) {
-      bDisplayCleared = true;
-      DisplayBuff.ClearAll();
-      FlushFramebufferToScreen();
-      RadioDriver.SetFrequency(currentFreq);
-      BK4819Write(0x47, u16OldAfSettings); // set previous AF settings
-    }
+  void Init() {
+    currentFreq = RadioDriver.GetFrequency();
+    oldAFSettings = BK4819Read(0x47);
+    oldBWSettings = BK4819Read(0x43);
+    MuteAF();
+    SetBW();
+    ResetPeak();
+    resetBlacklist = true;
+    ToggleGreen(false);
+    isInitialized = true;
   }
 
-  inline void Listen(u32 duration) {
-    for (u8 i = 0; i < 16 && lastButtonPressed == 255; ++i) {
-      lastButtonPressed = PollKeyboard();
-      DelayUs(duration >> 4);
+  void DeInit() {
+    DisplayBuff.ClearAll();
+    FlushFramebufferToScreen();
+    RadioDriver.SetFrequency(currentFreq);
+    RestoreOldAFSettings();
+    BK4819Write(0x43, oldBWSettings);
+    ToggleGreen(true);
+    isInitialized = false;
+  }
+
+  void ResetPeak() { peakRssi = 0; }
+
+  void SetBW() { BK4819SetChannelBandwidth(mode <= LastLowBWModeIndex); }
+  void MuteAF() { BK4819Write(0x47, 0); }
+  void RestoreOldAFSettings() { BK4819Write(0x47, oldAFSettings); }
+
+  void Listen() {
+    if (fMeasure != peakF) {
+      fMeasure = peakF;
+      RadioDriver.SetFrequency(fMeasure);
+      RestoreOldAFSettings();
+      // RadioDriver.ToggleAFDAC(true);
     }
+    for (u8 i = 0; i < 16 && PollKeyboard() == 255; ++i) {
+      DelayMs(64);
+    }
+    peakRssi = rssiHistory[peakI] = GetRssi();
+  }
+
+  u16 GetScanStep() { return modeScanStep[mode]; }
+  u32 GetBW() { return modeHalfSpectrumBW[mode] << 1; }
+  u32 GetFStart() { return currentFreq - modeHalfSpectrumBW[mode]; }
+  u32 GetFEnd() { return currentFreq + modeHalfSpectrumBW[mode]; }
+
+  u8 GetMeasurementsCount() { return 128 >> modeXdiv[mode]; }
+
+  void ResetRSSI() {
+    RadioDriver.ToggleRXDSP(false);
+    RadioDriver.ToggleRXDSP(true);
   }
 
   u8 GetRssi() {
-    if (!stickyPeakTrigger) {
-      // reset RSSI register
-      RadioDriver.ToggleRXDSP(false);
-      RadioDriver.ToggleRXDSP(true);
-    }
+    ResetRSSI();
 
-    DelayUs(scanDelay);
-    return BK4819Read(0x67);
+    DelayUs(scanDelay << (mode <= LastLowBWModeIndex));
+    auto v = BK4819Read(0x67) & 0x1FF;
+    return v < 255 ? v : 255;
   }
 
-  u8 GetRssi(u32 f) {
-    RadioDriver.SetFrequency(f);
-    return GetRssi();
-  }
-
-  inline bool IsFlashLightOn() { return GPIOC->DATA & GPIO_PIN_3; }
-  inline void TurnOffFlashLight() {
+  bool IsFlashLightOn() { return GPIOC->DATA & GPIO_PIN_3; }
+  void TurnOffFlashLight() {
     GPIOC->DATA &= ~GPIO_PIN_3;
     gFlashLightStatus = 3;
   }
 
-  inline void ToggleBacklight() { GPIOB->DATA ^= GPIO_PIN_6; }
+  void ToggleBacklight() { GPIOB->DATA ^= GPIO_PIN_6; }
 
-  inline u8 Rssi2Y(u8 rssi) {
-    return clamp(DrawingEndY - (rssi - rssiMin), 1, DrawingEndY);
+  void ToggleRed(bool flag) { BK4819SetGpio(5, flag); }
+  void ToggleGreen(bool flag) { BK4819SetGpio(6, flag); }
+
+  u8 Rssi2Y(u8 rssi) {
+    return DrawingEndY - clamp(rssi - rssiMin, 0, DrawingEndY);
   }
 
-  inline i32 clamp(i32 v, i32 min, i32 max) {
-    if (v < min)
-      return min;
-    if (v > max)
-      return max;
-    return v;
-  }
-
-  inline u32 modulo(u32 num, u32 div) {
-    while (num >= div)
-      num -= div;
-    return num;
+  i32 clamp(i32 v, i32 min, i32 max) {
+    return v <= min ? min : (v >= max ? max : v);
   }
 
   TUV_K5Display DisplayBuff;
-  const TUV_K5SmallNumbers FontSmallNr;
   CDisplay<const TUV_K5Display> Display;
-
-  u8 lastButtonPressed;
-  u32 currentFreq;
-  u16 u16OldAfSettings;
+  const TUV_K5SmallNumbers FontSmallNr;
 
   u16 scanDelay;
-  u8 sampleZoom;
-  u32 scanStep;
-  u32 frequencyChangeStep;
+  u8 mode;
   u8 rssiTriggerLevel;
-  bool stickyPeakTrigger;
 
-  bool working = false;
-  bool bDisplayCleared = true;
+  u8 btn;
+  u8 btnPrev;
+  u32 currentFreq;
+  u16 oldAFSettings;
+  u16 oldBWSettings;
+  u32 frequencyChangeStep;
+
+  bool isInitialized;
+  bool resetBlacklist;
 };
