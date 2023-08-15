@@ -1,4 +1,7 @@
 # UV_K5_playground
+### All Latest Releases Builds - Status <br><br> [![auto release build](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg?branch=release)](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml)
+
+
 [Latest RELEASES Download](https://github.com/piotr022/UV_K5_playground/releases/latest)
 
 # UV-K6 + UV-5R Plus Mods
