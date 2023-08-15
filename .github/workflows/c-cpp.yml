@@ -87,8 +87,8 @@ jobs:
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      #env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       with:
         tag_name: ${{ format('release-{0}', github.run_number) }}
         release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
@@ -97,8 +97,8 @@ jobs:
 
     - name: Upload Release Asset rssi_printer_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
@@ -107,8 +107,8 @@ jobs:
 
     - name: Upload Release Asset rssi_sbar_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
@@ -117,8 +117,8 @@ jobs:
 
     - name: Upload Release Asset pong_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/pong/pong_encoded.bin
@@ -127,8 +127,8 @@ jobs:
 
     - name: Upload Release Asset most_useless_mod_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     # env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
@@ -137,8 +137,8 @@ jobs:
 
     - name: Upload Release Asset spectrum_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   #   env:
+   #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/spectrum/spectrum_encoded.bin
@@ -147,8 +147,8 @@ jobs:
 
     - name: Upload Release Asset spectrum_fagci_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   #   env:
+   #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/spectrum_fagci/spectrum_fagci_encoded.bin
@@ -157,8 +157,8 @@ jobs:
 
     - name: Upload Release Asset messenger_encoded
       uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   #   env:
+   #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/messenger/messenger_encoded.bin
