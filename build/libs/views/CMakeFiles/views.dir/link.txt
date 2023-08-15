@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ar qc libviews.a CMakeFiles/views.dir/views.cpp.obj
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib libviews.a

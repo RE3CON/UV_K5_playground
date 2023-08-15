@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ar qc liblcd.a CMakeFiles/lcd.dir/lcd.cpp.obj
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib liblcd.a

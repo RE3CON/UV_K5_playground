@@ -117,10 +117,10 @@ k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tuna
     - Branch: main
     - Region/Machine type: Doesn't matter
 - execute `sh -c "$(curl -fsSL https://raw.githubusercontent.com/manujedi/UV_K5-Tools/main/TutOnlineEnv/SetupGCC.sh)"` in the Terminal (or run the commands by hand to see what they do)
-![Environment](../media/DevEnvGccCommand.png)
+![Environment](https://github.com/RE3CON/UV_K5-Tools/blob/main/media/DevEnvGccCommand.png)
   - this takes some time (about 1min) 
   - your codespace should stop (if not select the codespace and press enter), click restart
-  ![Environment](../media/DevEnvGccCommand.png)
+  ![Environment](https://github.com/RE3CON/UV_K5-Tools/blob/main/media/DevEnvGccCommand.png)
 - Build the FW (do not use `ninja`, replace `ninja` with `make`. Commands are similar to the ones in the README):
   - `mkdir build`
   - `cd build`
@@ -129,6 +129,6 @@ k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tuna
   - `make rssi_sbar_encoded`
 
 You should have now a full development environment
-![Environment](../media/DevEnv.png)
+![Environment](https://github.com/RE3CON/UV_K5-Tools/blob/main/media/DevEnv.png)
 ## Warning
 I'm not responsible for radios bricked by this trojan xD

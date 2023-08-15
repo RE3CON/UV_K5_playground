@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ar qc libkeyboard.a CMakeFiles/keyboard.dir/t9.cpp.obj
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib libkeyboard.a

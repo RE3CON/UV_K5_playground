@@ -1,0 +1,527 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                              CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin) (System::CopyDataSection())
+../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                              (VectorTable)
+../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                              CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin) (DelayUs)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj) (memcpy)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_exit)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                              /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o (strlen)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                              /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o (__gnu_thumb1_case_uqi)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x80 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+ .text.Reset_Handler
+                0x0000000000000000       0x10 CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+ .ARM.attributes
+                0x0000000000000000       0x21 CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+ .org_bootloader
+                0x0000000000000000     0x1000 ../orginal_fw/org_bootloader.o
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .text.__wrap___udivsi3
+                0x0000000000000000        0x8 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .ARM.attributes
+                0x0000000000000000       0x1c ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .rodata        0x0000000000000000       0x24 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x000000002000138c 0x0000000000000100 xrw
+FLASH            0x0000000000000000 0x000000000000f000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+LOAD CMakeFiles/spectrum_fagci.dir/main.cpp.obj
+LOAD /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+LOAD CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj
+LOAD CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+LOAD ../orginal_fw/org_vectors.o
+LOAD ../orginal_fw/org_bootloader.o
+LOAD ../orginal_fw/org_fw_rest.o
+LOAD ../../libs/k5_uv_system/libuv_k5_system.a
+LOAD ../../libs/lcd/liblcd.a
+LOAD ../../libs/k5_uv_system/libuv_k5_system.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000020001388                _estack = 0x20001388
+                0x0000000000000000                . = 0x0
+
+.isr_vectors    0x0000000000000000       0xc0
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.isr_vectors)
+ .isr_vectors   0x0000000000000000       0xc0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                0x0000000000000000                VectorTable
+                0x00000000000000c0                . = ALIGN (0x4)
+
+.eh_frame       0x00000000000000c0        0x0
+ .eh_frame      0x00000000000000c0        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.org_fw_rest    0x00000000000000c0     0xe460
+                0x00000000000000c0                . = ALIGN (0x4)
+ *(.org_fw_rest)
+ .org_fw_rest   0x00000000000000c0     0xe460 ../orginal_fw/org_fw_rest.o
+                0x00000000000000c0                _binary_org_fw_rest_bin_start
+                0x000000000000e520                _binary_org_fw_rest_bin_end
+
+.org_vectors    0x000000000000e520       0xc0
+                0x000000000000e520                . = ALIGN (0x4)
+                0x000000000000e520                __org_vectors_start = .
+ *(.org_vectors)
+ .org_vectors   0x000000000000e520       0xc0 ../orginal_fw/org_vectors.o
+                0x000000000000e520                _binary_org_vectors_bin_start
+                0x000000000000e5e0                _binary_org_vectors_bin_end
+
+.text           0x000000000000e5e0      0x9ac
+                0x000000000000e5e0                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000000000e5e0       0x48 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x000000000000e628      0x79c /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                0x000000000000e860                Reset_Handler
+                0x000000000000e868                SysTick_Handler
+ .text          0x000000000000edc4        0xe /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                0x000000000000edc4                strlen
+ *fill*         0x000000000000edd2        0x2 
+ .text          0x000000000000edd4       0x14 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x000000000000edd4                __gnu_thumb1_case_uqi
+ *(.text*)
+ .text.startup  0x000000000000ede8       0xa0 /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                0x000000000000ede8                main
+ .text._ZN6System15CopyDataSectionEv
+                0x000000000000ee88       0x2c ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                0x000000000000ee88                System::CopyDataSection()
+ .text.__libc_init_array
+                0x000000000000eeb4       0x48 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x000000000000eeb4                __libc_init_array
+ .text.memcpy   0x000000000000eefc       0x12 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000000eefc                memcpy
+ .text.memset   0x000000000000ef0e       0x10 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x000000000000ef0e                memset
+ *(.rodata)
+ *fill*         0x000000000000ef1e        0x2 
+ .rodata        0x000000000000ef20       0x54 /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+ *(.rodata*)
+ *(.init)
+ .init          0x000000000000ef74        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000000000ef74                _init
+ .init          0x000000000000ef78        0x8 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x000000000000ef80        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000000000ef80                _fini
+ .fini          0x000000000000ef84        0x8 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x000000000000ef8c                . = ALIGN (0x4)
+
+.glue_7         0x000000000000ef8c        0x0
+ .glue_7        0x000000000000ef8c        0x0 linker stubs
+
+.glue_7t        0x000000000000ef8c        0x0
+ .glue_7t       0x000000000000ef8c        0x0 linker stubs
+
+.vfp11_veneer   0x000000000000ef8c        0x0
+ .vfp11_veneer  0x000000000000ef8c        0x0 linker stubs
+
+.v4_bx          0x000000000000ef8c        0x0
+ .v4_bx         0x000000000000ef8c        0x0 linker stubs
+
+.iplt           0x000000000000ef8c        0x0
+ .iplt          0x000000000000ef8c        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rel.dyn        0x000000000000ef8c        0x0
+ .rel.iplt      0x000000000000ef8c        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.preinit_array  0x000000000000ef8c        0x0
+                0x000000000000ef8c                __preinit_array_start = .
+ *(.preinit_array*)
+                0x000000000000ef8c                __preinit_array_end = .
+
+.init_array     0x000000000000ef8c        0x8
+                0x000000000000ef8c                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x000000000000ef8c        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x000000000000ef90        0x4 /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                0x000000000000ef94                __init_array_end = .
+
+.fini_array     0x000000000000ef94        0x4
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000000ef94        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x000000000000ef98                . = ALIGN (0x4)
+                0x000000000000ef98                _flash_data_start = .
+                0x000000000000ef98                _sidata = LOADADDR (.data)
+
+.data           0x000000002000138c        0x0 load address 0x000000000000ef98
+                0x000000002000138c                . = ALIGN (0x4)
+                0x000000002000138c                _sdata = .
+ *(.data)
+ *(.data*)
+ *(.ramsection)
+                0x000000002000138c                _edata = .
+
+.igot.plt       0x000000002000138c        0x0
+ .igot.plt      0x000000002000138c        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.bss            0x000000002000138c       0xb4
+                0x000000002000138c                . = ALIGN (0x4)
+                0x000000002000138c                _sbss = .
+ *(.bss)
+ .bss           0x000000002000138c       0x1c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss           0x00000000200013a8       0x98 /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                0x0000000020001440                _ebss = .
+OUTPUT(spectrum_fagci elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ .ARM.attributes
+                0x0000000000000000       0x1e /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x2a /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000074       0x2c ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .ARM.attributes
+                0x00000000000000a0       0x21 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .ARM.attributes
+                0x00000000000000c1       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000000ed       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000119       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000145       0x1c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000161       0x1e /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x000000000000017f       0x1e /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x4a /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x49 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                                         0x4a (size before relaxing)
+
+.debug_frame    0x0000000000000000       0x74
+ .debug_frame   0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000000000000002c       0x28 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000054       0x20 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+
+Cross Reference Table
+
+Symbol                                            File
+AdcReadout                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+AirCopy72                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+AirCopyFskSetup                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819ConfigureAndStartRxFsk                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819ConfigureAndStartTxFsk                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819Read                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+BK4819Reset                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819SetGpio                                     ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819SetPaGain                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819Write                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+BK4819WriteFrequency                              ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+CDisplay<TUV_K5Display const>::DrawHLine(int, int, int, bool) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CDisplay<TUV_K5Display const>::DrawLine(int, int, int) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CDisplay<TUV_K5Display const>::Print(char const*) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CDisplay<TUV_K5Display const>::PrintCharacter(char) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CDisplay<TUV_K5Display const>::PrintFixedDigitsNumber2(int, unsigned char, unsigned char) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CDisplay<TUV_K5Display const>::powersOfTen        CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::CSpectrum()               CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::CSpectrum()               CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::DrawArrow(unsigned char)  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::DrawNums()                CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::DrawRssiTriggerLevel()    CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::DrawSpectrum()            CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::DrawTicks()               CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::GetRssi()                 CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::GetRssi(unsigned int)     CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Handle()                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::HandleUserInput()         CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Listen(unsigned int)      CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::ListenPeak()              CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::OnUserInput()             CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Render()                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::RestoreParams()           CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Rssi2Y(unsigned char)     CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Scan()                    CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::ToggleBacklight()         CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::TurnOffFlashLight()       CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::Update()                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateCurrentFreq(long long) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateFreqChangeStep(long long) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateRssiTriggerLevel(int) CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateSampleZoom(int)     CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateScanDelay(int)      CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+CSpectrum<RadioDriver>::UpdateScanStep(int)       CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+ConfigureTrimValuesFromNVR                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+DelayMs                                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+DelayUs                                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+FLASH_Init                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_IsBusy                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_IsInitBusy                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Lock                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_MaskLock                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_MaskUnlock                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadByAHB                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadByAPB                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadNvrWord                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_RebootToBootloader                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetEraseTime                                ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetMaskSel                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetMode                                     ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetProgramTime                              ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetReadMode                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Set_NVR_SEL                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Start                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Unlock                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_WakeFromDeepSleep                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FlushFramebufferToScreen                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+FlushStatusbarBufferToScreen                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FormatString                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+Hardware::TFlashLight::BlinkSync(unsigned char)   CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hardware::TFlashLight::Off()                      CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hardware::TFlashLight::On()                       CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hardware::TFlashLight::Toggle()                   CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hardware::TPower::EnableDbg()                     CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hardware::TSystem::Delay(unsigned int)            CMakeFiles/spectrum_fagci.dir/hardware/hardware.cpp.obj (symbol from plugin)
+Hw                                                CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+IRQ_RESET                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+IRQ_SYSTICK                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+IntDivide                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+PollKeyboard                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+PrintFrequency                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+PrintSmallDigits                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+PrintTextOnScreen                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+Radio::CBK4819::GetFrequency()                    CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+Radio::CBK4819::SetFrequency(unsigned int)        CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+Radio::CBK4819::ToggleAFDAC(bool)                 CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+Radio::CBK4819::ToggleRXDSP(bool)                 CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+RadioDriver                                       CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+Reset_Handler                                     /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+SomeAmStuff                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+Spectrum                                          CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+SysTick_Handler                                   /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+System::CopyDataSection()                         ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+SystemReset                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+TUV_K5Display::ClearAll()                         CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5Display::GetCoursorData(unsigned short) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5Display::GetPixel(unsigned char, unsigned char) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5Display::SetPixel(unsigned char, unsigned char) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5Small::GetRaw(char) const                   CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5Small::GetSizeY(char) const                 CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5SmallNumbers::GetPixel(char, unsigned char, unsigned char) const CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5SmallNumbers::GetRaw(char) const            CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5SmallNumbers::GetSizeX(char) const          CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+TUV_K5SmallNumbers::GetSizeY(char) const          CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+UpdateStatusBar                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+VectorTable                                       ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+WriteSerialData                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+__bss_end__                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__bss_start__                                     /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__call_exitprocs                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+__deregister_frame_info                           /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__dso_handle                                      /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__gnu_thumb1_case_uqi                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+__init_array_end                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__init_array_start                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__libc_fini_array                                 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__libc_init_array                                 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__preinit_array_end                               /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__preinit_array_start                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__register_frame_info                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__sf_fake_stderr                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__stack                                           /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__wrap___udivsi3                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_binary_org_bootloader_bin_end                    ../orginal_fw/org_bootloader.o
+_binary_org_bootloader_bin_size                   ../orginal_fw/org_bootloader.o
+_binary_org_bootloader_bin_start                  ../orginal_fw/org_bootloader.o
+_binary_org_fw_rest_bin_end                       ../orginal_fw/org_fw_rest.o
+_binary_org_fw_rest_bin_size                      ../orginal_fw/org_fw_rest.o
+_binary_org_fw_rest_bin_start                     ../orginal_fw/org_fw_rest.o
+_binary_org_vectors_bin_end                       ../orginal_fw/org_vectors.o
+_binary_org_vectors_bin_size                      ../orginal_fw/org_vectors.o
+_binary_org_vectors_bin_start                     ../orginal_fw/org_vectors.o
+_edata                                            ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_estack                                           ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                                                  CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+_exit                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+_fini                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+_global_impure_ptr                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+_impure_ptr                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+_init                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+_mainCRTStartup                                   /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+_sdata                                            ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_sidata                                           ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_stack_init                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+_start                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+atexit                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+exit                                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+gDisplayBuffer                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+gFlashLightStatus                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+gSmallDigs                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+gSmallLeters                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+gStatusBarData                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+gVoltage                                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+hardware_init_hook                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+main                                              /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+                                                  CMakeFiles/spectrum_fagci.dir/dp32g030.s.obj
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+memcpy                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+memset                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+software_init_hook                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+strlen                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                                                  /tmp/spectrum_fagci.4P0iW7.ltrans0.ltrans.o
+vtable for TUV_K5Display                          CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)
+vtable for TUV_K5SmallNumbers                     CMakeFiles/spectrum_fagci.dir/main.cpp.obj (symbol from plugin)

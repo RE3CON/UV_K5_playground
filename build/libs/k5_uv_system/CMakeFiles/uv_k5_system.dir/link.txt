@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ar qc libuv_k5_system.a CMakeFiles/uv_k5_system.dir/system.cpp.obj CMakeFiles/uv_k5_system.dir/vtable.s.obj CMakeFiles/uv_k5_system.dir/api.s.obj
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib libuv_k5_system.a

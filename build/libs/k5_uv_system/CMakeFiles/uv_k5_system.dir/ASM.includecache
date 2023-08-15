@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/UV_K5_playground/libs/k5_uv_system/api.s
+
+/workspaces/UV_K5_playground/libs/k5_uv_system/vtable.s
+

@@ -1,0 +1,636 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                              CMakeFiles/rssi_sbar.dir/main.cpp.obj (System::CopyDataSection())
+../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                              (VectorTable)
+../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                              CMakeFiles/rssi_sbar.dir/main.cpp.obj (BK4819Write)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              CMakeFiles/rssi_sbar.dir/main.cpp.obj (memcpy)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                              CMakeFiles/rssi_sbar.dir/main.cpp.obj (strlen)
+/opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .rodata        0x0000000000000000       0x24 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x80 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .group         0x0000000000000000        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text.startup.main
+                0x0000000000000000        0xa CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware6TPower9EnableDbgEv
+                0x0000000000000000       0x30 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware7TSystem5DelayEj
+                0x0000000000000000       0x1a CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware11TFlashLight2OnEv
+                0x0000000000000000       0x10 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware11TFlashLight3OffEv
+                0x0000000000000000       0x10 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware11TFlashLight6ToggleEv
+                0x0000000000000000       0x10 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text._ZN8Hardware11TFlashLight9BlinkSyncEh
+                0x0000000000000000       0x28 CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .comment       0x0000000000000000       0x4a CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+ .text.Reset_Handler
+                0x0000000000000000       0x10 CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+ .ARM.attributes
+                0x0000000000000000       0x21 CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+ .org_vectors   0x0000000000000000       0xc0 ../orginal_fw/org_vectors.o
+ .org_bootloader
+                0x0000000000000000     0x1000 ../orginal_fw/org_bootloader.o
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .text.__wrap___udivsi3
+                0x0000000000000000        0x8 ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .text          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .data          0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .bss           0x0000000000000000        0x0 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .ARM.attributes
+                0x0000000000000000       0x1c ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .rodata        0x0000000000000000       0x24 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x000000002000138c 0x0000000000000100 xrw
+FLASH            0x0000000000000000 0x000000000000f000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+LOAD CMakeFiles/rssi_sbar.dir/main.cpp.obj
+LOAD CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+LOAD CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+LOAD ../orginal_fw/org_vectors.o
+LOAD ../orginal_fw/org_bootloader.o
+LOAD ../orginal_fw/org_fw_rest.o
+LOAD ../../libs/k5_uv_system/libuv_k5_system.a
+LOAD ../../libs/lcd/liblcd.a
+LOAD ../../libs/views/libviews.a
+LOAD ../../libs/lcd/liblcd.a
+LOAD ../../libs/keyboard/libkeyboard.a
+LOAD ../../libs/k5_uv_system/libuv_k5_system.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
+LOAD /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000020001388                _estack = 0x20001388
+                0x0000000000000000                . = 0x0
+
+.isr_vectors    0x0000000000000000       0xc0
+                0x0000000000000000                . = ALIGN (0x4)
+ *(.isr_vectors)
+ .isr_vectors   0x0000000000000000       0xc0 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                0x0000000000000000                VectorTable
+                0x00000000000000c0                . = ALIGN (0x4)
+
+.eh_frame       0x00000000000000c0        0x0
+ .eh_frame      0x00000000000000c0        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.org_fw_rest    0x00000000000000c0     0xe460
+                0x00000000000000c0                . = ALIGN (0x4)
+ *(.org_fw_rest)
+ .org_fw_rest   0x00000000000000c0     0xe460 ../orginal_fw/org_fw_rest.o
+                0x00000000000000c0                _binary_org_fw_rest_bin_start
+                0x000000000000e520                _binary_org_fw_rest_bin_end
+
+.text           0x000000000000e520      0x8f0
+                0x000000000000e520                . = ALIGN (0x4)
+ *(.text)
+ .text          0x000000000000e520       0x48 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x000000000000e568        0xe /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                0x000000000000e568                strlen
+ *(.text*)
+ .text._ZNK13TUV_K5Display8GetPixelEhh
+                0x000000000000e576        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e576                TUV_K5Display::GetPixel(unsigned char, unsigned char) const
+ .text._ZNK13TUV_K5Display8SetPixelEhh
+                0x000000000000e57a       0x20 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e57a                TUV_K5Display::SetPixel(unsigned char, unsigned char) const
+ .text._ZNK13TUV_K5Display14GetCoursorDataEt
+                0x000000000000e59a        0x6 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e59a                TUV_K5Display::GetCoursorData(unsigned short) const
+ .text._ZNK18TUV_K5SmallNumbers8GetPixelEchh
+                0x000000000000e5a0        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5a0                TUV_K5SmallNumbers::GetPixel(char, unsigned char, unsigned char) const
+ .text._ZNK18TUV_K5SmallNumbers6GetRawEc
+                0x000000000000e5a4       0x22 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5a4                TUV_K5SmallNumbers::GetRaw(char) const
+ .text._ZNK18TUV_K5SmallNumbers8GetSizeXEc
+                0x000000000000e5c6        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5c6                TUV_K5SmallNumbers::GetSizeX(char) const
+ .text._ZNK18TUV_K5SmallNumbers8GetSizeYEc
+                0x000000000000e5ca        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5ca                TUV_K5SmallNumbers::GetSizeY(char) const
+ .text._ZN5IView14HandleMainViewER12TViewContext
+                0x000000000000e5ce        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5ce                IView::HandleMainView(TViewContext&)
+ .text._ZN5IView19HandlePressedButtonER12TViewContexth
+                0x000000000000e5d2        0x2 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5d2                IView::HandlePressedButton(TViewContext&, unsigned char)
+ .text._ZN5IView20HandleReleasedButtonER12TViewContexth
+                0x000000000000e5d4        0x2 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e5d4                IView::HandleReleasedButton(TViewContext&, unsigned char)
+ *fill*         0x000000000000e5d6        0x2 
+ .text._ZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE8GetLabelEv
+                0x000000000000e5d8       0x14 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text._ZThn8_N9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE8GetLabelEv
+                0x000000000000e5ec       0x10 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text._ZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleUserActionEh
+                0x000000000000e5fc        0xe CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ *fill*         0x000000000000e60a        0x2 
+ .text._ZThn8_N9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleUserActionEh
+                0x000000000000e60c       0x10 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text._ZN13TUV_K5Display8ClearAllEv
+                0x000000000000e61c       0x10 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e61c                TUV_K5Display::ClearAll()
+ .text._ZNK8CDisplayI13TUV_K5DisplayE14PrintCharacterEc.isra.0
+                0x000000000000e62c       0x54 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text._ZN4Rssi5TRssiC2Es
+                0x000000000000e680       0x28 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e680                Rssi::TRssi::TRssi(short)
+                0x000000000000e680                Rssi::TRssi::TRssi(short)
+ .text.Reset_Handler
+                0x000000000000e6a8        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e6a8                Reset_Handler
+ .text._ZN12CViewManagerILh8ELh2ELh1EE6HandleEv
+                0x000000000000e6b0       0xe0 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e6b0                CViewManager<(unsigned char)8, (unsigned char)2, (unsigned char)1>::Handle()
+ .text.SysTick_Handler
+                0x000000000000e790       0xd0 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e790                SysTick_Handler
+ .text._ZNK8CDisplayI13TUV_K5DisplayE5PrintEPKc
+                0x000000000000e860       0x22 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e860                CDisplay<TUV_K5Display>::Print(char const*) const
+ *fill*         0x000000000000e882        0x2 
+ .text._ZN8CDisplayI13TUV_K5DisplayE23PrintFixedDigitsNumber2Eihh
+                0x000000000000e884       0x90 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e884                CDisplay<TUV_K5Display>::PrintFixedDigitsNumber2(int, unsigned char, unsigned char)
+ .text._ZN8CDisplayI13TUV_K5DisplayE13DrawRectangleEhhhhb
+                0x000000000000e914       0xbe CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000e914                CDisplay<TUV_K5Display>::DrawRectangle(unsigned char, unsigned char, unsigned char, unsigned char, bool)
+ *fill*         0x000000000000e9d2        0x2 
+ .text._ZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleBackgroundER12TViewContext
+                0x000000000000e9d4      0x26c CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text.startup._GLOBAL__sub_I_DisplayBuff
+                0x000000000000ec40       0x60 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .text._ZN6System15CopyDataSectionEv
+                0x000000000000eca0       0x2c ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                0x000000000000eca0                System::CopyDataSection()
+ .text.__libc_init_array
+                0x000000000000eccc       0x48 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x000000000000eccc                __libc_init_array
+ .text.memcpy   0x000000000000ed14       0x12 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000000ed14                memcpy
+ .text.memset   0x000000000000ed26       0x10 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x000000000000ed26                memset
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE8GetLabelEv.str1.1
+                0x000000000000ed36       0x1c CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .rodata._ZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleBackgroundER12TViewContext.str1.1
+                0x000000000000ed52        0x3 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ *fill*         0x000000000000ed55        0x3 
+ .rodata._ZTV13TUV_K5Display
+                0x000000000000ed58       0x18 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000ed58                vtable for TUV_K5Display
+ .rodata._ZTV18TUV_K5SmallNumbers
+                0x000000000000ed70       0x18 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000ed70                vtable for TUV_K5SmallNumbers
+ .rodata._ZN4Rssi9U8RssiMapE
+                0x000000000000ed88        0xd CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000ed88                Rssi::U8RssiMap
+ *fill*         0x000000000000ed95        0x3 
+ .rodata._ZN8CDisplayI13TUV_K5DisplayE11powersOfTenE
+                0x000000000000ed98       0x24 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000ed98                CDisplay<TUV_K5Display>::powersOfTen
+ .rodata._ZL11FontSmallNr
+                0x000000000000edbc        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .rodata._ZL5Views
+                0x000000000000edc4        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .rodata._ZTV9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE
+                0x000000000000edc8       0x30 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ *(.init)
+ .init          0x000000000000edf8        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000000000edf8                _init
+ .init          0x000000000000edfc        0x8 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x000000000000ee04        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x000000000000ee04                _fini
+ .fini          0x000000000000ee08        0x8 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x000000000000ee10                . = ALIGN (0x4)
+
+.glue_7         0x000000000000ee10        0x0
+ .glue_7        0x000000000000ee10        0x0 linker stubs
+
+.glue_7t        0x000000000000ee10        0x0
+ .glue_7t       0x000000000000ee10        0x0 linker stubs
+
+.vfp11_veneer   0x000000000000ee10        0x0
+ .vfp11_veneer  0x000000000000ee10        0x0 linker stubs
+
+.v4_bx          0x000000000000ee10        0x0
+ .v4_bx         0x000000000000ee10        0x0 linker stubs
+
+.iplt           0x000000000000ee10        0x0
+ .iplt          0x000000000000ee10        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rel.dyn        0x000000000000ee10        0x0
+ .rel.iplt      0x000000000000ee10        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.preinit_array  0x000000000000ee10        0x0
+                0x000000000000ee10                __preinit_array_start = .
+ *(.preinit_array*)
+                0x000000000000ee10                __preinit_array_end = .
+
+.init_array     0x000000000000ee10        0x8
+                0x000000000000ee10                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x000000000000ee10        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x000000000000ee14        0x4 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000000000ee18                __init_array_end = .
+
+.fini_array     0x000000000000ee18        0x4
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000000ee18        0x4 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x000000000000ee1c                . = ALIGN (0x4)
+                0x000000000000ee1c                _flash_data_start = .
+                0x000000000000ee1c                _sidata = LOADADDR (.data)
+
+.data           0x000000002000138c       0x2a load address 0x000000000000ee1c
+                0x000000002000138c                . = ALIGN (0x4)
+                0x000000002000138c                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.Display  0x000000002000138c        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x000000002000138c                Display
+ .data.DisplayBuff
+                0x0000000020001398        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x0000000020001398                DisplayBuff
+ .data.DisplayStatusBar
+                0x00000000200013a0        0xc CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x00000000200013a0                DisplayStatusBar
+ .data.StatusBarBuff
+                0x00000000200013ac        0x8 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x00000000200013ac                StatusBarBuff
+ .data._ZZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleBackgroundER12TViewContextE10bIsCleared
+                0x00000000200013b4        0x1 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .data._ZZN9CRssiSbarIL_Z11DisplayBuffEL_Z7DisplayEL_Z16DisplayStatusBarEL_ZL11FontSmallNrEL_Z11RadioDriverEE16HandleBackgroundER12TViewContextE13u8SqlDelayCnt
+                0x00000000200013b5        0x1 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ *(.ramsection)
+                0x00000000200013b6                _edata = .
+
+.igot.plt       0x00000000200013b8        0x0 load address 0x000000000000ee48
+ .igot.plt      0x00000000200013b8        0x0 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.bss            0x00000000200013b8       0x1c load address 0x000000000000ee48
+                0x00000000200013b8                . = ALIGN (0x4)
+                0x00000000200013b8                _sbss = .
+ *(.bss)
+ .bss           0x00000000200013b8       0x1c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000200013d4                _ebss = .
+OUTPUT(rssi_sbar elf32-littlearm)
+LOAD linker stubs
+
+.bss.Manager    0x00000000200013d4       0x1c load address 0x000000000000ee64
+ .bss.Manager   0x00000000200013d4       0x1c CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x00000000200013d4                Manager
+
+.bss.RadioDriver
+                0x00000000200013f0       0x14 load address 0x000000000000ee80
+ .bss.RadioDriver
+                0x00000000200013f0       0x14 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                0x00000000200013f0                RadioDriver
+
+.bss.RssiSbar   0x0000000020001404       0x18 load address 0x000000000000ee94
+ .bss.RssiSbar  0x0000000020001404       0x18 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+
+.bss._ZZ15SysTick_HandlerE10bFirstInit
+                0x000000002000141c        0x1 load address 0x000000000000eeac
+ .bss._ZZ15SysTick_HandlerE10bFirstInit
+                0x000000002000141c        0x1 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ .ARM.attributes
+                0x0000000000000000       0x1e /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x2c CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ .ARM.attributes
+                0x0000000000000076       0x2c ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+ .ARM.attributes
+                0x00000000000000a2       0x21 ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+ .ARM.attributes
+                0x00000000000000c3       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000000ef       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000000000000011b       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000147       0x1c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000163       0x1e /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+
+.comment        0x0000000000000000       0x49
+ .comment       0x0000000000000000       0x49 CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                         0x4a (size before relaxing)
+ .comment       0x0000000000000049       0x4a ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+
+.debug_frame    0x0000000000000000       0x74
+ .debug_frame   0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000000000000002c       0x28 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000054       0x20 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+
+Cross Reference Table
+
+Symbol                                            File
+AdcReadout                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+AirCopy72                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+AirCopyFskSetup                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819ConfigureAndStartRxFsk                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819ConfigureAndStartTxFsk                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819Read                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+BK4819Reset                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819SetGpio                                     ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819SetPaGain                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+BK4819Write                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+BK4819WriteFrequency                              ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+CDisplay<TUV_K5Display>::DrawRectangle(unsigned char, unsigned char, unsigned char, unsigned char, bool) CMakeFiles/rssi_sbar.dir/main.cpp.obj
+CDisplay<TUV_K5Display>::Print(char const*) const CMakeFiles/rssi_sbar.dir/main.cpp.obj
+CDisplay<TUV_K5Display>::PrintFixedDigitsNumber2(int, unsigned char, unsigned char) CMakeFiles/rssi_sbar.dir/main.cpp.obj
+CDisplay<TUV_K5Display>::powersOfTen              CMakeFiles/rssi_sbar.dir/main.cpp.obj
+CViewManager<(unsigned char)8, (unsigned char)2, (unsigned char)1>::Handle() CMakeFiles/rssi_sbar.dir/main.cpp.obj
+ConfigureTrimValuesFromNVR                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+DelayMs                                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+DelayUs                                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+Display                                           CMakeFiles/rssi_sbar.dir/main.cpp.obj
+DisplayBuff                                       CMakeFiles/rssi_sbar.dir/main.cpp.obj
+DisplayStatusBar                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+FLASH_Init                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_IsBusy                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_IsInitBusy                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Lock                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_MaskLock                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_MaskUnlock                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadByAHB                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadByAPB                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_ReadNvrWord                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_RebootToBootloader                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetEraseTime                                ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetMaskSel                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetMode                                     ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetProgramTime                              ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_SetReadMode                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Set_NVR_SEL                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Start                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_Unlock                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FLASH_WakeFromDeepSleep                           ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+FlushFramebufferToScreen                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+FlushStatusbarBufferToScreen                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+FormatString                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+Hardware::TFlashLight::BlinkSync(unsigned char)   CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+Hardware::TFlashLight::Off()                      CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+Hardware::TFlashLight::On()                       CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+Hardware::TFlashLight::Toggle()                   CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+Hardware::TPower::EnableDbg()                     CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+Hardware::TSystem::Delay(unsigned int)            CMakeFiles/rssi_sbar.dir/hardware/hardware.cpp.obj
+IRQ_RESET                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+IRQ_SYSTICK                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+IView::HandleMainView(TViewContext&)              CMakeFiles/rssi_sbar.dir/main.cpp.obj
+IView::HandlePressedButton(TViewContext&, unsigned char) CMakeFiles/rssi_sbar.dir/main.cpp.obj
+IView::HandleReleasedButton(TViewContext&, unsigned char) CMakeFiles/rssi_sbar.dir/main.cpp.obj
+IntDivide                                         ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+Manager                                           CMakeFiles/rssi_sbar.dir/main.cpp.obj
+PollKeyboard                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+PrintFrequency                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+PrintSmallDigits                                  ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+PrintTextOnScreen                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+RadioDriver                                       CMakeFiles/rssi_sbar.dir/main.cpp.obj
+Reset_Handler                                     CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+Rssi::TRssi::TRssi(short)                         CMakeFiles/rssi_sbar.dir/main.cpp.obj
+Rssi::TRssi::TRssi(short)                         CMakeFiles/rssi_sbar.dir/main.cpp.obj
+Rssi::U8RssiMap                                   CMakeFiles/rssi_sbar.dir/main.cpp.obj
+SomeAmStuff                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+StatusBarBuff                                     CMakeFiles/rssi_sbar.dir/main.cpp.obj
+SysTick_Handler                                   CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+System::CopyDataSection()                         ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+SystemReset                                       ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+TUV_K5Display::ClearAll()                         CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5Display::GetCoursorData(unsigned short) const CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5Display::GetPixel(unsigned char, unsigned char) const CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5Display::SetPixel(unsigned char, unsigned char) const CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5SmallNumbers::GetPixel(char, unsigned char, unsigned char) const CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5SmallNumbers::GetRaw(char) const            CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5SmallNumbers::GetSizeX(char) const          CMakeFiles/rssi_sbar.dir/main.cpp.obj
+TUV_K5SmallNumbers::GetSizeY(char) const          CMakeFiles/rssi_sbar.dir/main.cpp.obj
+UpdateStatusBar                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+VectorTable                                       ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+WriteSerialData                                   ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+__bss_end__                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__bss_start__                                     /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__call_exitprocs                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+__deregister_frame_info                           /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__dso_handle                                      /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__init_array_end                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__init_array_start                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__libc_fini_array                                 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__libc_init_array                                 /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__preinit_array_end                               /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__preinit_array_start                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+__register_frame_info                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+__sf_fake_stderr                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+__stack                                           /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+__wrap___udivsi3                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_binary_org_bootloader_bin_end                    ../orginal_fw/org_bootloader.o
+_binary_org_bootloader_bin_size                   ../orginal_fw/org_bootloader.o
+_binary_org_bootloader_bin_start                  ../orginal_fw/org_bootloader.o
+_binary_org_fw_rest_bin_end                       ../orginal_fw/org_fw_rest.o
+_binary_org_fw_rest_bin_size                      ../orginal_fw/org_fw_rest.o
+_binary_org_fw_rest_bin_start                     ../orginal_fw/org_fw_rest.o
+_binary_org_vectors_bin_end                       ../orginal_fw/org_vectors.o
+_binary_org_vectors_bin_size                      ../orginal_fw/org_vectors.o
+_binary_org_vectors_bin_start                     ../orginal_fw/org_vectors.o
+_edata                                            ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_estack                                           ../../libs/k5_uv_system/libuv_k5_system.a(vtable.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+_exit                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+_fini                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+_global_impure_ptr                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+_impure_ptr                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+_init                                             /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+_mainCRTStartup                                   /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+_sdata                                            ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_sidata                                           ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+_stack_init                                       /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+_start                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+atexit                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+exit                                              /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+gDisplayBuffer                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+gFlashLightStatus                                 ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+gSmallDigs                                        ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+gSmallLeters                                      ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+gStatusBarData                                    ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+gVoltage                                          ../../libs/k5_uv_system/libuv_k5_system.a(api.s.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+hardware_init_hook                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+main                                              CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                                  CMakeFiles/rssi_sbar.dir/dp32g030.s.obj
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+memcpy                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  ../../libs/k5_uv_system/libuv_k5_system.a(system.cpp.obj)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+memset                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+                                                  /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+software_init_hook                                /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+strlen                                            /opt/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                                                  CMakeFiles/rssi_sbar.dir/main.cpp.obj
+vtable for TUV_K5Display                          CMakeFiles/rssi_sbar.dir/main.cpp.obj
+vtable for TUV_K5SmallNumbers                     CMakeFiles/rssi_sbar.dir/main.cpp.obj
