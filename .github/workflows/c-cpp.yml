@@ -2,9 +2,9 @@ name: 'auto release build'
 
 on:
   push:
-    branches: [ codespace-obscure-fishstick-6r459vxxggg3rw9p ]
+    branches: [ release ]
   pull_request:
-    branches: [ codespace-obscure-fishstick-6r459vxxggg3rw9p ]
+    branches: [ release ]
 
 env:
   BUILD_TYPE: Release
