@@ -50,6 +50,24 @@ jobs:
         name: rssi_sbar_encoded
         path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
 
+    - name: Upload rssi_sbar_hot_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: rssi_sbar_hot_encoded
+        path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
+
+    - name: Upload rssi_sbar_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: am_tx_encoded
+        path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
+
+    - name: Upload t9_texting_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: t9_texting_encoded
+        path: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
+
     - name: Upload pong_encoded as artifact
       uses: actions/upload-artifact@v2
       with:
