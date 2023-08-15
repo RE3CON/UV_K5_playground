@@ -1,5 +1,8 @@
 # UV_K5_playground
+### [![auto release build](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg?branch=release)](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml)
+
 To support ongoing work, you can make a [donation](https://paypal.me/sq9p).  
+
 ## src/messenger ![auto release build](https://github.com/piotr022/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg)
 ![messenger](./docs/messenger.gif)  
 AFSK messenger with T9 typing support  
