@@ -2,6 +2,10 @@
 ### All Latest Releases Builds - Status <br><br> [![auto release build](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg?branch=release)](https://github.com/RE3CON/UV_K5_playground/actions/workflows/c-cpp.yml)
 
 
+[Latest RELEASES Download](https://github.com/piotr022/UV_K5_playground/releases/latest)
+
+# UV-K6 + UV-5R Plus Mods
+[Latest _Releases Download](https://github.com/spm81/Quansheng_UV-K5/tree/main/Firmware)
 
 ## src/messenger ![auto release build](https://github.com/piotr022/UV_K5_playground/actions/workflows/c-cpp.yml/badge.svg)
 ![messenger](./docs/messenger.gif)  
@@ -144,11 +148,6 @@ Select the specific build target in the bottom bar and press build.
 ###### uploading
 Enter the 'Run & Debug' tab, select 'kwaczek DBG', and press run.
 
-## links
-* currently firmare that is wrapped by par_runner comes from Tunas1337 mod 
-k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tunas1337/UV-K5-Modded-Firmwares)  
-* crypting/encrypting/modding py tools [amnemonic repo](https://github.com/amnemonic/Quansheng_UV-K5_Firmware)  
-
 # Tutorial for building Piotr FW online
 - ALL COMMANDS ARE RUN IN THE CODESPACE, nothing modifies you pc, don't run any command on your local pc
 - you need a github account
@@ -171,5 +170,29 @@ k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tuna
 
 You should have now a full development environment
 ![Environment](https://github.com/RE3CON/UV_K5-Tools/blob/main/media/DevEnv.png)
+
+## WIP Work in progress Mods
+**AM_TX**
+* Submenu AM TX, push side button 2 (flashlight)
+* amplituden modulation with remaining bug
+* PTT sendet kein Träger Signal für Amplituden Modulation. Eher wie SSB Modulations bedingter Träger zumindest beim Rogerbeep. Mic Audio Input?
+
+**RSSI_SBAR_HOT**
+* To go into the submenu, push side button 2 (flashlight)
+***Settings Options:**
+* Heater: on/off
+* AM RX: 0/1/2
+* S-metr: normal/59
+![20230806_213723](https://github.com/RE3CON/UV_K5_playground/assets/35396009/34b5f9fe-3cd9-40f1-8675-e296cb54e38d)
+
+**Full Changelog**: https://github.com/piotr022/UV_K5_playground/releases
+
+[Latest Releases](https://github.com/piotr022/UV_K5_playground/releases)
+[Mods for UV-K6 UV-5R Plus](https://github.com/spm81/Quansheng_UV-K5/tree/main/Firmware)
+## links
+* currently firmare that is wrapped by par_runner comes from Tunas1337 mod 
+k5_26_encrypted_18to1300MHz.bin [UV-K5-Modded-Firmwares](https://github.com/Tunas1337/UV-K5-Modded-Firmwares)  
+* crypting/encrypting/modding py tools [amnemonic repo](https://github.com/amnemonic/Quansheng_UV-K5_Firmware)  
+
 ## Warning
 I'm not responsible for radios bricked by this trojan xD
