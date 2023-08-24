@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  BUILD_TYPE: Nightly
+  BUILD_TYPE: Release
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   
 jobs:
@@ -33,7 +33,7 @@ jobs:
       run: git submodule update --init --recursive --rebase
 
     - name: Configure CMake
-      run: cmake -LD_LIBRARY_PATH=OFF --fresh -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
+      run: cmake --fresh -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
 
     - name: Build
       run: cmake --build ${{github.workspace}}/build --clean-first --config ${{env.BUILD_TYPE}} --target rssi_printer_encoded rssi_sbar_encoded rssi_sbar_hot_encoded am_tx_encoded t9_texting_encoded pong_encoded most_useless_mod_encoded spectrum_encoded spectrum_fagci_encoded messenger_encoded
@@ -111,7 +111,7 @@ jobs:
         tag_name: ${{ format('release-s{0}', github.run_number) }}
         release_name: ${{ format('Release S{0}, {1}', github.run_number, steps.date.outputs.date) }}
         draft: false
-        prerelease: false
+        prerelease: true
 
     - name: Upload Release Asset rssi_printer_encoded
       uses: actions/upload-release-asset@v1.0.2
