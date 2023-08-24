@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  BUILD_TYPE: Release
+  BUILD_TYPE: Nightly
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   
 jobs:
