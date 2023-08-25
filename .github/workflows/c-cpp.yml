@@ -32,6 +32,8 @@ jobs:
     - name: Submodules Init
       run: git submodule update --init --recursive
       run: cmake
+      
+    - name: Build      
       run: cmake ${{github.workspace}}/src/original_fw
 
     - name: Configure CMake
