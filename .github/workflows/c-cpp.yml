@@ -21,7 +21,7 @@ jobs:
         release: '9-2020-q2'
         
     - name: Setup Python
-      uses: actions/setup-python@v3.1.4
+      uses: actions/setup-python@v3.11.4
       
     - name: Install dependencies
       run: pip install pyserial
@@ -124,16 +124,6 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset rssi_sbar_encoded
-      uses: actions/upload-release-asset@v1.0.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} 
-        asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
-        asset_name: ${{ format('uv_k5_26_rssi_sbar_encoded_v{0}.bin', github.run_number) }}
-        asset_content_type: application/octet-stream
-
-          - name: Upload Release Asset rssi_sbar_encoded
       uses: actions/upload-release-asset@v1.0.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
