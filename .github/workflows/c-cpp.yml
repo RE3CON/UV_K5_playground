@@ -21,7 +21,7 @@ jobs:
         release: '9-2020-q2'
         
     - name: Setup Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v3.1.4
       
     - name: Install dependencies
       run: pip install pyserial
