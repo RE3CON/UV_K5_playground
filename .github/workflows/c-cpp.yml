@@ -31,7 +31,6 @@ jobs:
 
     - name: Submodules Init
       run: git submodule update --init --recursive
-      run: cmake
       
     - name: reBuild      
       run: cmake ${{github.workspace}}/src/original_fw
