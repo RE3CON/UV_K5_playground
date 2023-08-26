@@ -32,7 +32,7 @@ jobs:
     - name: Submodules Init
       run: git submodule update --init --recursive
       
-    -name: clean
+    - name: clean
      clean: rm -rf $(TARGET) 
           
     - name: Configure CMake
