@@ -9,6 +9,7 @@ on:
 env:
   BUILD_TYPE: Release
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  clean: rm -rf $(TARGET) 
 
 jobs:
   build:
@@ -31,7 +32,9 @@ jobs:
 
     - name: Submodules Init
       run: git submodule update --init --recursive
-      
+
+     clean: rm -rf $(TARGET) 
+          
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
  
