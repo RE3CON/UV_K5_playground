@@ -31,6 +31,9 @@ jobs:
 
     - name: Submodules Init
       run: git submodule update --init --recursive
+
+    - name: orginal fw
+      run: cmake src/orginal_fw
             
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
