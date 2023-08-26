@@ -9,8 +9,7 @@ on:
 env:
   BUILD_TYPE: Release
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-  clean: rm -rf $(TARGET) 
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +31,8 @@ jobs:
 
     - name: Submodules Init
       run: git submodule update --init --recursive
-
+      
+    -name: clean
      clean: rm -rf $(TARGET) 
           
     - name: Configure CMake
