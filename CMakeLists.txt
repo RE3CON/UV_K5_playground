@@ -39,7 +39,7 @@ message(STATUS "System Processor      : ${CMAKE_SYSTEM_PROCESSOR}")
 message(STATUS
     "BUILD CONFIGURATION: ${CMAKE_BUILD_TYPE}\n"
     "---optimization level : ${OPTI_FLAG}\n"
-    "---libs:\n"
+    "---lib:\n"
     "BUILD FLAGS:\n"
     "[STM32_DEFINES]    ${STM32_DEFINES}\n"
     "[compiler options]          ${COMPILER_OPTIONS}\n"
