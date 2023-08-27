@@ -20,19 +20,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
 
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
-#-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY)
-# set(COMPILER_OPTIONS -mthumb -mcpu=cortex-m0 -mfpu=auto -mfloat-abi=soft -fno-exceptions 
-# -msoft-float -fdata-sections -ffunction-sections -Wall $<$<COMPILE_LANGUAGE:CXX>:-Wno-register> -Wno-unknown-pragmas 
-# -O${OPTI_FLAG} $<$<COMPILE_LANGUAGE:CXX>:-fno-rtti>
-# )
 
 set(COMPILER_OPTIONS -mthumb -mcpu=cortex-m0 -mfpu=auto -mfloat-abi=soft -fno-exceptions 
--msoft-float -fdata-sections -ffunction-sections -Wall $<$<COMPILE_LANGUAGE:CXX>:-Wno-register> -Wno-unknown-pragmas 
--O${OPTI_FLAG} -Wl,--gc-sections $<$<COMPILE_LANGUAGE:CXX>:-fno-rtti> 
-)
+ -msoft-float -fdata-sections -ffunction-sections -Wall $<$<COMPILE_LANGUAGE:CXX>:-Wno-register> -Wno-unknown-pragmas 
+ -O${OPTI_FLAG} $<$<COMPILE_LANGUAGE:CXX>:-fno-rtti>
+ )
+
+#set(COMPILER_OPTIONS -mthumb -mcpu=cortex-m0 -mfpu=auto -mfloat-abi=soft -fno-exceptions 
+#-msoft-float -fdata-sections -ffunction-sections -Wall $<$<COMPILE_LANGUAGE:CXX>:-Wno-register> -Wno-unknown-pragmas 
+#-O${OPTI_FLAG} -Wl,--gc-sections $<$<COMPILE_LANGUAGE:CXX>:-fno-rtti> 
+#)
 
 add_subdirectory(tools)
-add_subdirectory(libs)
+add_subdirectory(lib)
 add_subdirectory(src)
 
 message(STATUS "System Processor      : ${CMAKE_SYSTEM_PROCESSOR}")
