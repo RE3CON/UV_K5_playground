@@ -32,7 +32,7 @@ set(COMPILER_OPTIONS -mthumb -mcpu=cortex-m0 -mfpu=auto -mfloat-abi=soft -fno-ex
 #)
 
 add_subdirectory(tools)
-add_subdirectory(lib)
+add_subdirectory(libs)
 add_subdirectory(src)
 
 message(STATUS "System Processor      : ${CMAKE_SYSTEM_PROCESSOR}")
