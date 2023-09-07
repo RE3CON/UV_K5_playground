@@ -1,28 +1,29 @@
+- name: orginal fw
+      run: cmake --build /home/runner/work/UV_K5_playground/UV_K5_playground/src/orginal_fw --target orginal_fw
 name: 'auto release build'
 
 on:
   push:
-    branches: [ release ]
+    branches: [ main ]
   pull_request:
-    branches: [ release ]
+    branches: [ main ]
 
 env:
   BUILD_TYPE: Release
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    
     - name: arm-none-eabi-gcc
       uses: fiam/arm-none-eabi-gcc@v1.0.2
       with:
         release: '9-2020-q2'
         
     - name: Setup Python
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v3.1.4
       
     - name: Install dependencies
       run: pip install pyserial
@@ -32,19 +33,13 @@ jobs:
 
     - name: Submodules Init
       run: git submodule update --init --recursive
-               
+
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
- 
-    - name: make orginal-fw
-      run: cmake --build ${{github.workspace}}/src/orginal_fw --target orginal_fw
 
-    - name: Build it
+    - name: Build
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target rssi_printer_encoded rssi_sbar_encoded rssi_sbar_hot_encoded am_tx_encoded t9_texting_encoded pong_encoded most_useless_mod_encoded spectrum_encoded spectrum_fagci_encoded messenger_encoded
-
-    - name: orginal fw
-      run: cmake --build /home/runner/work/UV_K5_playground/UV_K5_playground/src/orginal_fw --target orginal_fw
-
+    
     - name: Upload rssi_printer_encoded as artifact
       uses: actions/upload-artifact@v2
       with:
