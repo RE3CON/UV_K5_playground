@@ -1,5 +1,3 @@
-- name: orginal fw
-      run: cmake --build /home/runner/work/UV_K5_playground/UV_K5_playground/src/orginal_fw --target orginal_fw
 name: 'auto release build'
 
 on:
