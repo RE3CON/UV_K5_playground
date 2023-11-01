@@ -1,0 +1,214 @@
+name: 'release build'
+
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+env:
+  BUILD_TYPE: Release
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: arm-none-eabi-gcc
+      uses: fiam/arm-none-eabi-gcc@v1.0.2
+      with:
+        release: '9-2020-q2'
+        
+    - name: Setup Python
+      uses: actions/setup-python@v3.1.4
+      
+    - name: Install dependencies
+      run: pip install pyserial
+      
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Submodules Init
+      run: git submodule update --init --recursive
+
+    - name: Configure CMake
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DCMAKE_PROJECT_rssi_printer_encoded:BOOL=ON
+
+    - name: Build
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target rssi_printer_encoded rssi_sbar_encoded pong_encoded most_useless_mod_encoded spectrum_encoded spectrum_fagci_encoded messenger_encoded
+
+    - name: Upload rssi_printer_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: rssi_printer_encoded
+        path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
+
+    - name: Upload rssi_sbar_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: rssi_sbar_encoded
+        path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
+
+    - name: Upload rssi_sbar_hot_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: rssi_sbar_hot_encoded
+        path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
+
+    - name: Upload am_tx_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: am_tx_encoded
+        path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
+
+    - name: Upload t9_texting_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: t9_texting_encoded
+        path: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
+
+    - name: Upload pong_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: pong_encoded
+        path: ${{github.workspace}}/build/src/pong/pong_encoded.bin
+        
+    - name: Upload most_useless_mod_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: most_useless_mod_encoded
+        path: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
+
+    - name: Upload spectrum_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: spectrum_encoded
+        path: ${{github.workspace}}/build/src/spectrum/spectrum_encoded.bin
+
+    - name: Upload spectrum_fagci_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: spectrum_fagci_encoded
+        path: ${{github.workspace}}/build/src/spectrum_fagci/spectrum_fagci_encoded.bin
+
+    - name: Upload messenger_encoded as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: messenger_encoded
+        path: ${{github.workspace}}/build/src/messenger/messenger_encoded.bin
+
+    - name: Get the date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      with:
+        tag_name: ${{ format('release-{0}', github.run_number) }}
+        release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset rssi_printer_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
+        asset_name: uv_k5_01_26_rssi_printer_encoded.bin
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset rssi_sbar_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
+        asset_name: ${{ format('uv_k5_26_rssi_sbar_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset rssi_sbar_hot_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
+        asset_name: ${{ format('uv_k5_26_rssi_sbar_hot_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset am_tx_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
+        asset_name: ${{ format('uv_k5_26_am_tx_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+        
+    - name: Upload Release Asset t9_texting_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
+        asset_name: ${{ format('uv_k5_26_t9_texting_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset pong_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/pong/pong_encoded.bin
+        asset_name: ${{ format('uv_k5_26_pong_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset most_useless_mod_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
+        asset_name: ${{ format('uv_k5_26_most_useless_mod_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset spectrum_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/spectrum/spectrum_encoded.bin
+        asset_name: ${{ format('uv_k5_26_spectrum_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset spectrum_fagci_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/spectrum_fagci/spectrum_fagci_encoded.bin
+        asset_name: ${{ format('uv_k5_26_spectrum_fagci_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
+
+    - name: Upload Release Asset messenger_encoded
+      uses: actions/upload-release-asset@v1.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ${{github.workspace}}/build/src/messenger/messenger_encoded.bin
+        asset_name: ${{ format('uv_k5_26_cold_messenger_encoded_v{0}.bin', github.run_number) }}
+        asset_content_type: application/octet-stream
