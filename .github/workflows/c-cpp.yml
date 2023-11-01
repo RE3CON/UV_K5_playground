@@ -102,14 +102,14 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
-    - name: Create Release
-      id: create_release
-      uses: svenstaro/upload-release-action@v2
-      with:
-        tag_name: ${{ format('release-{0}', github.run_number) }}
-        release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
-        draft: false
-        prerelease: false
+  #  - name: Create Release
+ #     id: create_release
+#      uses: svenstaro/upload-release-action@v2
+#      with:
+ #       tag: ${{ format('release-{0}', github.run_number) }}
+ #       release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
+ #       draft: false
+ #       prerelease: false
 
     - name: Upload Release Asset rssi_printer_encoded
       uses: svenstaro/upload-release-action@v2
@@ -119,6 +119,8 @@ jobs:
         asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
         asset_name: uv_k5_01_26_rssi_printer_encoded.bin
         asset_content_type: application/octet-stream
+        tag: ${{ format('release-{0}', github.run_number) }}
+        release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
 
     - name: Upload Release Asset rssi_sbar_encoded
       uses: svenstaro/upload-release-action@v2
