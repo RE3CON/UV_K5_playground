@@ -6,12 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
-#env:
-#  BUILD_TYPE: Release
-#  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-release:
-    types:
-      - published
+env:
+  BUILD_TYPE: Release
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+#release:
+#    types:
+ #     - published
 
 jobs:
   build:
