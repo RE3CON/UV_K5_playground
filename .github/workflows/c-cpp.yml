@@ -112,7 +112,7 @@ jobs:
         prerelease: false
 
     - name: Upload Release Asset rssi_printer_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
@@ -120,7 +120,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset rssi_sbar_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
@@ -128,7 +128,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset rssi_sbar_hot_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
@@ -136,7 +136,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset am_tx_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
@@ -144,7 +144,7 @@ jobs:
         asset_content_type: application/octet-stream
         
     - name: Upload Release Asset t9_texting_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
@@ -152,7 +152,7 @@ jobs:
         asset_content_type: application/octet-stream  
 
     - name: Upload Release Asset pong_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/pong/pong_encoded.bin
@@ -160,7 +160,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset most_useless_mod_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: actions/upload-release-asset@v1
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
