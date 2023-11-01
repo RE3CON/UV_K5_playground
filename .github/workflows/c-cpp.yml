@@ -117,7 +117,7 @@ jobs:
     - name: Upload Release Asset rssi_printer_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-        file: rssi_printer_encoded.bin
+        file: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
         asset_name:  ${{ format('uv_k5_01_26_rssi_printer_encoded_v{0}.bin', github.run_number) }}
@@ -128,7 +128,7 @@ jobs:
     - name: Upload Release Asset rssi_sbar_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-        file: rssi_sbar_encoded.bin
+        file: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
      #   upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
         asset_name: ${{ format('uv_k5_26_rssi_sbar_encoded_v{0}.bin', github.run_number) }}
@@ -139,7 +139,7 @@ jobs:
     - name: Upload Release Asset rssi_sbar_hot_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-        file: rssi_sbar_hot_encoded.bin
+        file: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
       #  asset_path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
         asset_name: ${{ format('uv_k5_26_rssi_sbar_hot_encoded_v{0}.bin', github.run_number) }}
@@ -150,7 +150,7 @@ jobs:
     - name: Upload Release Asset am_tx_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-        file: am_tx_encoded.bin
+        file: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
      #   upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
         asset_name: ${{ format('uv_k5_26_am_tx_encoded_v{0}.bin', github.run_number) }}
@@ -161,7 +161,7 @@ jobs:
     - name: Upload Release Asset t9_texting_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: t9_texting_encoded.bin
+       file: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/t9_texting/t9_texting_encoded.bin
        asset_name: ${{ format('uv_k5_26_t9_texting_encoded_v{0}.bin', github.run_number) }}
@@ -172,7 +172,7 @@ jobs:
     - name: Upload Release Asset pong_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: pong_encoded.bin
+       file: ${{github.workspace}}/build/src/pong/pong_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/pong/pong_encoded.bin
        asset_name: ${{ format('uv_k5_26_pong_encoded_v{0}.bin', github.run_number) }}
@@ -183,7 +183,7 @@ jobs:
     - name: Upload Release Asset most_useless_mod_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: most_useless_mod_encoded.bin
+       file: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/most_useless_mod/most_useless_mod_encoded.bin
        asset_name: ${{ format('uv_k5_26_most_useless_mod_encoded_v{0}.bin', github.run_number) }}
@@ -194,7 +194,7 @@ jobs:
     - name: Upload Release Asset spectrum_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: spectrum_encoded.bin
+       file: ${{github.workspace}}/build/src/spectrum/spectrum_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
       #  asset_path: ${{github.workspace}}/build/src/spectrum/spectrum_encoded.bin
        asset_name: ${{ format('uv_k5_26_spectrum_v{0}.bin', github.run_number) }}
@@ -205,7 +205,7 @@ jobs:
     - name: Upload Release Asset spectrum_fagci_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: spectrum_fagci_encoded.bin
+       file: ${{github.workspace}}/build/src/spectrum_fagci/spectrum_fagci_encoded.bin
      #   upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/spectrum_fagci/spectrum_fagci_encoded.bin
        asset_name: ${{ format('uv_k5_26_spectrum_fagci_v{0}.bin', github.run_number) }}
@@ -216,7 +216,7 @@ jobs:
     - name: Upload Release Asset messenger_encoded
       uses: svenstaro/upload-release-action@v2
       with:
-       file: messenger_encoded.bin
+       file: ${{github.workspace}}/build/src/messenger/messenger_encoded.bin
       #  upload_url: ${{ steps.create_release.outputs.upload_url }} 
      #   asset_path: ${{github.workspace}}/build/src/messenger/messenger_encoded.bin
        asset_name: ${{ format('uv_k5_26_cold_messenger_encoded_v{0}.bin', github.run_number) }}
