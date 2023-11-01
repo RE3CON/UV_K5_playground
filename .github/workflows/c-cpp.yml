@@ -114,6 +114,7 @@ jobs:
     - name: Upload Release Asset rssi_printer_encoded
       uses: svenstaro/upload-release-action@v2
       with:
+        file: rssi_printer_encoded.bin
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
         asset_name: uv_k5_01_26_rssi_printer_encoded.bin
@@ -122,6 +123,7 @@ jobs:
     - name: Upload Release Asset rssi_sbar_encoded
       uses: svenstaro/upload-release-action@v2
       with:
+        file: rssi_sbar_encoded.bin
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
         asset_name: ${{ format('uv_k5_26_rssi_sbar_encoded_v{0}.bin', github.run_number) }}
@@ -130,6 +132,7 @@ jobs:
     - name: Upload Release Asset rssi_sbar_hot_encoded
       uses: svenstaro/upload-release-action@v2
       with:
+        file: rssi_sbar_hot_encoded.bin
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
         asset_name: ${{ format('uv_k5_26_rssi_sbar_hot_encoded_v{0}.bin', github.run_number) }}
@@ -138,6 +141,7 @@ jobs:
     - name: Upload Release Asset am_tx_encoded
       uses: actions/upload-release-asset@v1.0.2
       with:
+        file: am_tx_encoded.bin
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/am_tx/am_tx_encoded.bin
         asset_name: ${{ format('uv_k5_26_am_tx_encoded_v{0}.bin', github.run_number) }}
