@@ -6,8 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
-run-name: release
-  
+env:
   BUILD_TYPE: Release
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -105,7 +104,7 @@ jobs:
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+      uses: svenstaro/upload-release-action@v2
       with:
         tag_name: ${{ format('release-{0}', github.run_number) }}
         release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
@@ -113,7 +112,7 @@ jobs:
         prerelease: false
 
     - name: Upload Release Asset rssi_printer_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: svenstaro/upload-release-action@v2
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_printer/rssi_printer_encoded.bin
@@ -121,7 +120,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset rssi_sbar_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: svenstaro/upload-release-action@v2
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar/rssi_sbar_encoded.bin
@@ -129,7 +128,7 @@ jobs:
         asset_content_type: application/octet-stream
 
     - name: Upload Release Asset rssi_sbar_hot_encoded
-      uses: actions/upload-release-asset@v1.0.2
+      uses: svenstaro/upload-release-action@v2
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} 
         asset_path: ${{github.workspace}}/build/src/rssi_sbar_hot/rssi_sbar_hot_encoded.bin
